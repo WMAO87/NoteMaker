@@ -17,25 +17,52 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!--CUSTOMIZED CSS-->
   <link rel="stylesheet" href="assets/css/styles.css">
-
-</head>
-
-<body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/assets/js/index.js"></script>
     <style>
 
-    #nav-bar{
-      padding-left: 17px;
-      padding-right: 17px;
-    }
-    #container{
-      width: 65%;
-      margin: 0 auto;
-    }
-
-
+      #nav-bar{
+        padding-left: 17px;
+        padding-right: 17px;
+      }
+      #container{
+        width: 65%;
+        margin: 0 auto;
+      }
+      #add-button{
+        margin-top: 25px;
+        margin-bottom: 10px;
+        text-align: end;
+        padding-right: 35px;
+      }
+      .align-right {
+      position: absolute;
+      right: 0px;
+      }
+      .relative{
+        position: relative;
+      }
     </style>
+</head>
+<body>
+    <nav>
+        <div id = "nav-bar" class="nav-wrapper">
+          <div id = "page-title" class="brand-logo">Notes</div>
+        </div>
+      </nav>
+      <div id = "add-button"><a href="/new-note" class="btn-floating btn-large waves-effect waves-light red" ><i class="material-icons">add</i></a></div>
+  <div id = "sideBar" ></div>
+  <div id = "container">
+      <ul class="collapsible">
+      
+        </ul>
+  </div>
+  
+
+
+
+
+
 </body>
 
 </html>
