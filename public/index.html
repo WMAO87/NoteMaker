@@ -87,12 +87,23 @@ function initialHide() {
 $(document).on('mouseover', 'li', function(){
   $(this).find(".hide-show").toggle();
 });
-
-
-
+$(document).on('mouseout', 'li', function(){
+  $(this).find(".hide-show").toggle();
+  });
+//  delete
+$(document).on('click', '.hide-show', function(){
+  var buttonValue = $(this).attr("value")
+  var indexData = {index: parseInt(buttonValue)}
+  $.post("/api/delete", indexData,
+  $.post("/api/delete", indexData,
+function(data) {
+  if (data) {
+    console.log("Working?")  }
+      });
+    console.log($(this).parent().parent().hide())
+  });
+  
 
 </script>
-
-
 
 </html>
